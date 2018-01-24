@@ -1551,8 +1551,8 @@
 /* Basic */
 
 	body {
-		background: #f0f4f4;
-		color: #5b5b5b;
+		background: #4056A1;
+		color: black;
 		font-size: 15pt;
 		line-height: 1.85em;
 		font-family: 'Source Sans Pro', sans-serif;
@@ -1626,7 +1626,7 @@
 	}
 
 		a:hover {
-			color: #ef8376;
+			color: darkred;
 			border-bottom-color: transparent;
 		}
 
@@ -1990,7 +1990,7 @@
 	.button {
 		position: relative;
 		display: inline-block;
-		background: #df7366;
+		background: #f13c20;
 		color: #fff;
 		text-align: center;
 		border-radius: 0.5em;
@@ -2011,8 +2011,8 @@
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			color: #fff;
-			background: #ef8376;
+			color: black;
+			background: #c5cbe3;
 		}
 
 		input[type="button"].alt,
@@ -2083,7 +2083,7 @@
 /* Wrapper */
 
 	.wrapper {
-		background: #fff;
+		background: #efe2ba;
 		margin: 0 0 2em 0;
 		padding: 6em 0 6em 0;
 	}
@@ -2131,7 +2131,7 @@
 			}
 
 		#header h1 {
-			color: #fff;
+			color: white;
 			font-size: 3em;
 			line-height: 1em;
 		}
@@ -2383,7 +2383,7 @@
 	}
 
 		#footer .icon.circled {
-			background: #fff;
+			background: white;
 			color: #2b252c;
 		}
 
