@@ -1551,7 +1551,7 @@
 /* Basic */
 
 	body {
-		background: #4056A1;
+		background: red;
 		color: black;
 		font-size: 15pt;
 		line-height: 1.85em;
@@ -1832,7 +1832,7 @@
 
 	ul.icons {
 		position: relative;
-		background: rgba(128, 128, 128, 0.05);
+		background: rgba(128, 128, 128, .5);
 		border-radius: 4em;
 		display: inline-block;
 		padding: 0.35em 0.75em 0.35em 0.75em;
@@ -2083,7 +2083,7 @@
 /* Wrapper */
 
 	.wrapper {
-		background: #efe2ba;
+		background: #F6F6F6;
 		margin: 0 0 2em 0;
 		padding: 6em 0 6em 0;
 	}
@@ -2096,10 +2096,11 @@
 
 	#header {
 		position: relative;
-		background-image: url("../../images/header.jpg");
-		background-size: cover;
-		background-position: center center;
-		background-attachment: fixed;
+		background-image: url(/img/logos/header.jpg);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: 50% 42%; 
+        background-color: white;
 		color: #fff;
 		text-align: center;
 		padding: 7.5em 0 2em 0;
@@ -2119,6 +2120,7 @@
 			margin: 0;
 			display: inline-block;
 			vertical-align: middle;
+            display: none;
 		}
 
 		#header header {
@@ -2588,9 +2590,8 @@
 		/* Header */
 
 			#header {
-				background-attachment: scroll;
-                background-image: url(/img/logos/header.jpg);
-                background-position: center;
+         background-repeat: no-repeat;
+         background-position: 50% 41%;  
 			}
 
 				#header .inner {
@@ -2637,6 +2638,12 @@
 				display: block;
 				text-align: center;
 			}
+        
+        /* header */
+            #header {
+                background-position: 50% 37%;
+                background-repeat: no-repeat;  
+			}
 
 		/* Footer */
 
@@ -2674,6 +2681,12 @@
 			body, input, textarea, select {
 				font-size: 12.5pt;
 				line-height: 1.5em;
+			}
+        
+            #header {
+                background-attachment: scroll;
+                background-position: 50% 50%;
+                background-repeat: repeat-x;  
 			}
 
 			h2 {
