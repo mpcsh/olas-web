@@ -2210,6 +2210,8 @@
 		padding: 1.5em 0 1.5em 0;
 		z-index: 1;
 		overflow: hidden;
+        background-color: rgba(100,100,100, .8);
+        color: black;
 	}
 
 		#nav > ul {
@@ -2587,11 +2589,15 @@
 
 			#header {
 				background-attachment: scroll;
+                background-image: url(/img/logos/header.jpg);
+                background-position: center;
 			}
 
 				#header .inner {
 					padding-left: 2em;
 					padding-right: 2em;
+                    /* because the background has the name,  we don't need this for now*/
+                    display: none;
 				}
 
 		/* Banner */
