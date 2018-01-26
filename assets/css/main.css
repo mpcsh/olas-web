@@ -1551,7 +1551,7 @@
 /* Basic */
 
 	body {
-		background: red;
+		background: grey;
 		color: black;
 		font-size: 15pt;
 		line-height: 1.85em;
@@ -2083,7 +2083,7 @@
 /* Wrapper */
 
 	.wrapper {
-		background: #F6F6F6;
+		background: #fff;
 		margin: 0 0 2em 0;
 		padding: 6em 0 6em 0;
 	}
@@ -2209,11 +2209,11 @@
 		left: 0;
 		width: 100%;
 		text-align: center;
-		padding: 1.5em 0 1.5em 0;
+		padding: 1em 0;
 		z-index: 1;
 		overflow: hidden;
-        background-color: rgba(100,100,100, .8);
-        color: black;
+        background-color: rgba(0, 0, 0, .5);
+        color: ;
 	}
 
 		#nav > ul {
@@ -2382,7 +2382,7 @@
 		position: relative;
 		overflow: hidden;
 		padding: 6em 0 6em 0;
-		background: #2b252c;
+		background: rgba(0,0,0,1);
 		color: #fff;
 	}
 
