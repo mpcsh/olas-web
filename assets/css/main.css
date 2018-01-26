@@ -1551,8 +1551,8 @@
 /* Basic */
 
 	body {
-		background: #f0f4f4;
-		color: #5b5b5b;
+		background: grey;
+		color: black;
 		font-size: 15pt;
 		line-height: 1.85em;
 		font-family: 'Source Sans Pro', sans-serif;
@@ -1626,7 +1626,7 @@
 	}
 
 		a:hover {
-			color: #ef8376;
+			color: darkred;
 			border-bottom-color: transparent;
 		}
 
@@ -1832,7 +1832,7 @@
 
 	ul.icons {
 		position: relative;
-		background: rgba(128, 128, 128, 0.05);
+		background: rgba(128, 128, 128, .5);
 		border-radius: 4em;
 		display: inline-block;
 		padding: 0.35em 0.75em 0.35em 0.75em;
@@ -1990,7 +1990,7 @@
 	.button {
 		position: relative;
 		display: inline-block;
-		background: #df7366;
+		background: #f13c20;
 		color: #fff;
 		text-align: center;
 		border-radius: 0.5em;
@@ -2011,8 +2011,8 @@
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			color: #fff;
-			background: #ef8376;
+			color: black;
+			background: #c5cbe3;
 		}
 
 		input[type="button"].alt,
@@ -2096,10 +2096,11 @@
 
 	#header {
 		position: relative;
-		background-image: url("../../images/header.jpg");
-		background-size: cover;
-		background-position: center center;
-		background-attachment: fixed;
+		background-image: url(../../img/logos/header.jpg);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: 50% 42%; 
+        background-color: white;
 		color: #fff;
 		text-align: center;
 		padding: 7.5em 0 2em 0;
@@ -2119,6 +2120,7 @@
 			margin: 0;
 			display: inline-block;
 			vertical-align: middle;
+            display: none;
 		}
 
 		#header header {
@@ -2131,7 +2133,7 @@
 			}
 
 		#header h1 {
-			color: #fff;
+			color: white;
 			font-size: 3em;
 			line-height: 1em;
 		}
@@ -2207,13 +2209,15 @@
 		left: 0;
 		width: 100%;
 		text-align: center;
-		padding: 1.5em 0 1.5em 0;
+		padding: 1em 0;
 		z-index: 1;
 		overflow: hidden;
+        background-color: rgba(0, 0, 0, .5);
+        color: ;
 	}
 
 		#nav > ul {
-			line-height: 0px;
+            line-height: 0px;
 			position: relative;
 			display: inline-block;
 			margin: 0;
@@ -2248,7 +2252,7 @@
 				display: inline-block;
 				margin: -9px 0.5em 0 0.5em;
 				border-radius: 0.5em;
-				padding: 0.85em;
+				padding: 0.53em;
 				border: solid 1px transparent;
 				-moz-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 				-webkit-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
@@ -2378,12 +2382,12 @@
 		position: relative;
 		overflow: hidden;
 		padding: 6em 0 6em 0;
-		background: #2b252c;
+		background: rgba(0,0,0,1);
 		color: #fff;
 	}
 
 		#footer .icon.circled {
-			background: #fff;
+			background: white;
 			color: #2b252c;
 		}
 
@@ -2586,12 +2590,15 @@
 		/* Header */
 
 			#header {
-				background-attachment: scroll;
+         background-repeat: no-repeat;
+         background-position: 50% 41%;  
 			}
 
 				#header .inner {
 					padding-left: 2em;
 					padding-right: 2em;
+                    /* because the background has the name,  we don't need this for now*/
+                    display: none;
 				}
 
 		/* Banner */
@@ -2631,6 +2638,12 @@
 				display: block;
 				text-align: center;
 			}
+        
+        /* header */
+            #header {
+                background-position: 50% 37%;
+                background-repeat: no-repeat;  
+			}
 
 		/* Footer */
 
@@ -2668,6 +2681,12 @@
 			body, input, textarea, select {
 				font-size: 12.5pt;
 				line-height: 1.5em;
+			}
+        
+            #header {
+                background-attachment: scroll;
+                background-position: 50% 50%;
+                background-repeat: repeat-x;  
 			}
 
 			h2 {
