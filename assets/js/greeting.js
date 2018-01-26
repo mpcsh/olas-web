@@ -8,7 +8,7 @@ if (time_hour > 18) {
 } else if (time_hour >= 0) {
     greeting = "Good Morning!";
 } else {
-    greeting = "Welcome!";
+    greeting = "Hello!";
 }
 
 document.write(greeting);
