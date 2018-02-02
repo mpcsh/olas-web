@@ -17,10 +17,14 @@
     margin-left: 20px;
 }
 
-/* floats images left and adds a margin */
-#board img {
-    float: left;
-    margin-right: 20px;
+@media (min-width: 480px) {
+    /* floats images left and adds a margin */
+    #board img {
+        float: left;
+        margin-right: 20px;
+    }
+    #board p {
+    margin-left: 220px;
 }
 
 /* adding style for board list */
@@ -35,7 +39,6 @@
 /* fixing indent of paragraphs */
 #board p {
     text-indent: 0;
-    margin-left: 220px;
 }
 
 /* fixing small style things with each board member */
