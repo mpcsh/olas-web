@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* adds indents to paragraphs */
+#content p {
+    text-indent: 20px;
+}
+
+/* adding style for board list */
+.show {
+    float: clear;
+    padding: 20px 0;
+    border-style: solid;
+    border-top-color: darkgray;
+    border-top-width: 1px;
+}
+
+/* adding a bottom border to the last board member */
+#coral {
+    border-bottom-color: darkgray;
+    border-bottom-width: 1px;
+}
