@@ -1,7 +1,7 @@
 var date = new Date();
 var time_hour = date.getHours();
 var greeting;
-if (time_hour > 18) {
+if (time_hour > 17) {
     greeting = "Good Evening!";
 } else if (time_hour > 11) {
     greeting = "Good Afternoon!";
