@@ -15,6 +15,18 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/extra_details.css" />
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    
+    <script>
+        /* nav bar and side bar */
+        window.onload = function(){
+            $.get("http://www.olasuchicago.org/nav_bar.html", function(data){
+                $("#nav").html(data);
+            })
+            $.get("http://www.olasuchicago.org/side_bar.html", function(data){
+                $("#side_bar").html(data);
+            })
+        }
+    </script>
 </head>
 <body class="right-sidebar">
     <div id="page-wrapper">
@@ -32,13 +44,7 @@
             
             <!-- Nav -->
             <nav id="nav">
-                <script>
-                    window.onload = function(){
-                        $.get("http://www.olasuchicago.org/nav_bar.html", function(data){
-                            $("#nav").html(data);
-                        })
-                    }
-                </script>
+                <!-- code in the main_functions.js file -->
             </nav>
         </div>
         
@@ -49,12 +55,12 @@
                     <div class="8u 12u(mobile)" id="content">
                         <article id="main">
                             <header>
-                                <!-- dynamic greeting -->
+                                <!-- dynamic greeting with javascript -->
                                 <h2 id="greeting"></h2>
                                 <p>
                                     Welcome to OLAS UChicago
                                 </p>
-                                <!-- testing a countdown -->
+                                <!-- testing a countdown with javascript -->
                                 <h3><a href="cultural_show/index.html">Premios OLAS Countdown:</a></h3>
                                 <!-- Display the countdown timer in an element -->
                                 <p id="countdown"></p>
@@ -103,13 +109,7 @@
                         </section>
                         <hr />
                         <div id="side_bar">
-                            <script>
-                                window.onload = function(){
-                                    $.get("http://www.olasuchicago.org/side_bar.html", function(data){
-                                        $("#side_bar").html(data);
-                                    })
-                                }
-                            </script>
+                            <!-- code in the script above -->
                         </div>  
                     </div>
                 </div>
@@ -299,7 +299,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="assets/js/greeting.js"></script>
+    <script src="assets/js/main_functions.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.dropotron.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
