@@ -152,13 +152,15 @@
                                     </footer>
                                 </section>
                                 <hr />
-                                <script>
-                                    window.onload = function(){
-                                        $.get("http://www.olasuchicago.org/side_bar.html", function(data){
-                                            $("#sidebar").html(data);
-                                        })
-                                    }
-                                </script>
+                                <div id="side_bar">
+                                    <script>
+                                        window.onload = function(){
+                                            $.get("http://www.olasuchicago.org/side_bar.html", function(data){
+                                                $("#side_bar").html(data);
+                                            })
+                                        }
+                                    </script>
+                                </div>  
 							</div>
 						</div>
 						<hr />
