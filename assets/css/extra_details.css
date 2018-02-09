@@ -1,5 +1,41 @@
 @charset "UTF-8";
 
-#story p {
+#story p, .indent {
     text-indent: 20px;
+}
+
+.special {
+    text-align: center;
+    margin: auto;
+}
+
+.main_events {
+    margin: auto;
+    width: auto;
+}
+
+#countdown_div {
+    background-image: url(/img/show/countdown.jpg);
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 2px 2px 8px black;
+}
+
+#countdown_div p {
+    text-align: inherit;
+    margin-bottom: auto;
+    text-shadow: 2px 2px 2px black;
+}
+
+#countdown_div h3 {
+    color: white;
+    
+}
+
+.fit {
+    margin-bottom: 20px;
 }
