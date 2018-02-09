@@ -19,9 +19,10 @@
     <script>
         /* nav bar and side bar */
         window.onload = function(){
+            /*
             $.get("http://www.olasuchicago.org/nav_bar.html", function(data){
                 $("#nav").html(data);
-            })
+            }) */ 
             $.get("http://www.olasuchicago.org/side_bar.html", function(data){
                 $("#side_bar").html(data);
             })
@@ -45,6 +46,64 @@
             <!-- Nav -->
             <nav id="nav">
                 <!-- code in the main_functions.js file -->
+                <ul>
+                    <li>
+                        <a href="http://www.olasuchicago.org/index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="http://www.olasuchicago.org/about/index.html">About</a>
+                        <ul>
+                            <li><a href="http://www.olasuchicago.org/about/index.html#mission">Our Mission</a></li>
+                            <li><a href="http://www.olasuchicago.org/about/index.html#what">What We Do</a></li>
+                            <li><a href="http://www.olasuchicago.org/about/index.html#board">Our Board</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://www.olasuchicago.org/membership/index.html">Members</a>
+                        <ul>
+                            <li><a href="http://www.olasuchicago.org/membership/index.html#get">Get involved</a></li>
+                            <li><a href="http://www.olasuchicago.org/membership/index.html#member"></a>How to become a member</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://www.olasuchicago.org/events/index.html">Events</a>
+                        <ul>
+                            <li><a href="http://www.olasuchicago.org/events/index.html#upcoming">Upcoming events</a></li>
+                            <li><a href="http://www.olasuchicago.org/events/index.html#suggestions"></a>Suggest an event</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://www.olasuchicago.org/cultural_show/index.html">Cultural Show</a>
+                        <ul>
+                            <li><a href="http://www.olasuchicago.org/cultural_show/index.html#committees">Committees</a></li>
+                            <li><a href="http://www.olasuchicago.org/cultural_show/index.html#volunteer">Volunteer</a></li>
+                            <li><a href="http://www.olasuchicago.org/cultural_show/index.html#gallery">Gallery</a></li>
+                            <li>
+                                <a href="http://www.olasuchicago.org/cultural_show/previous/index.html">Previous Years &hellip;</a>
+                                <ul>
+                                    <li><a href="http://www.olasuchicago.org/cultural_show/previous/2017.html">2017</a></li>
+                                    <li><a href="http://www.olasuchicago.org/cultural_show/previous/2016.html">2016</a></li>
+                                    <li><a href="http://www.olasuchicago.org/cultural_show/previous/2015.html">2015</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://www.olasuchicago.org/gallery/index.html">Gallery</a>
+                        <ul>
+                            <li><a href="http://www.olasuchicago.org/gallery/index.html#photos">Photographs</a></li>
+                            <li><a href="http://www.olasuchicago.org/gallery/index.html#videos">Videos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="http://www.olasuchicago.org/partnerships/index.html">Partnerships</a>
+                        <ul>
+                            <li><a href="http://www.olasuchicago.org/partnerships/index.html#accenture">Accenture</a></li>
+                            <li><a href="http://www.olasuchicago.org/partnerships/index.html#google">Google</a></li>
+                            <li><a href="http://www.olasuchicago.org/partnerships/index.html#mural">Mural Magazine</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </nav>
         </div>
         
