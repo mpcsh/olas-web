@@ -4,3 +4,9 @@
 #content p {
     text-indent: 20px;
 }
+
+/* doesn't seem to work */
+.main_events {
+    margin: auto;
+    width: auto;
+}
