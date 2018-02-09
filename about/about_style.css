@@ -27,7 +27,110 @@
         margin-left: 220px;
         text-indent: 0;
     }
+    
+    /* fixing small style things with each board member */
+    #juan, #kathia {
+        padding-bottom: 20px;
+    }
+
+    #berto {
+        padding-bottom: 63px;
+    }
+
+    #chema {
+        padding-bottom: 120px;
+    }
+
+    #gabino {
+        padding-bottom: 40px;
+    }
+
+    #dani, #emma, #nylani, #konrad, #ayling, #martina {
+        padding-bottom: 0;
+    }
+
+    /* adding a bottom border to the last board member */
+    #lorenzo {
+        padding-bottom: 65px;
+    }
 }
+
+@media (min-width: 519px) {
+    
+    /* fixing small style things with each board member */
+    #berto {
+        padding-bottom: 75px;
+    }
+}
+
+@media (min-width: 535px) {
+    
+    /* fixing small style things with each board member */
+    #chema {
+        padding-bottom: 145px;
+    }
+}
+
+@media (min-width: 557px) {
+    
+    /* fixing small style things with each board member */
+    #gabino {
+        padding-bottom: 55px;
+    }
+}
+
+@media (min-width: 610px) {
+    
+    /* fixing small style things with each board member */
+    #chema {
+        padding-bottom: 170px;
+    }
+    
+    #kathia {
+        padding-bottom: 40px;
+    }
+}
+
+@media (min-width: 642px) {
+    
+    /* fixing small style things with each board member */
+    #juan {
+        padding-bottom: 40px;
+    }
+}
+
+@media (min-width: 654px) {
+    
+    /* fixing small style things with each board member */
+    #kathia {
+        padding-bottom: 60px;
+    }
+    
+    #ayling {
+        padding-bottom: 20px;
+    }
+    
+    #gabino {
+        padding-bottom: 85px;
+    }
+}
+
+@media (min-width: 721px) {
+    
+    /* fixing small style things with each board member */
+    #lorenzo {
+        padding-bottom: 85px;
+    }
+}
+
+@media (min-width: 841px) {
+    
+    /* fixing small style things with each board member */
+    #berto {
+        padding-bottom: 95px;
+    }
+}
+
 
 /* adding style for board list */
 .board {
@@ -43,30 +146,8 @@
     text-indent: 0;
 }
 
-/* fixing small style things with each board member */
-#juan, #kathia {
-    padding-bottom: 20px;
-}
-
-#berto {
-    padding-bottom: 63px;
-}
-
-#chema {
-    padding-bottom: 100px;
-}
-
-#gabino {
-    padding-bottom: 40px;
-}
-
-#dani, #emma, #nylani, #konrad, #ayling, #martina {
-    padding-bottom: 0;
-}
-
 /* adding a bottom border to the last board member */
 #lorenzo {
     border-bottom-color: darkgray;
     border-bottom-width: 1px;
-    padding-bottom: 65px;
 }
