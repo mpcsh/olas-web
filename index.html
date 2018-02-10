@@ -16,18 +16,17 @@
     <link rel="stylesheet" href="assets/css/extra_details.css" />
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     
+    <!-- Loading jquery script for nav bar, doesn't work if script at end of file --> 
+    <script src="assets/js/jquery.min.js"></script>
     <script>
         /* nav bar and side bar */
-        window.onload = function(){
-            /*
-            $.get("http://www.olasuchicago.org/nav_bar.html", function(data){
-                $("#nav").html(data);
-            }) */ 
+        window.onload = function() {
             $.get("http://www.olasuchicago.org/side_bar.html", function(data){
-                $("#side_bar").html(data);
-            })
+                $("#sidebar").append(data);
+            })  
         }
-    </script>
+    </script> 
+    
 </head>
 <body class="right-sidebar">
     <div id="page-wrapper">
@@ -45,65 +44,16 @@
             
             <!-- Nav -->
             <nav id="nav">
-                <!-- code in the main_functions.js file -->
-                <ul>
-                    <li>
-                        <a href="http://www.olasuchicago.org/index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="http://www.olasuchicago.org/about/index.html">About</a>
-                        <ul>
-                            <li><a href="http://www.olasuchicago.org/about/index.html#mission">Our Mission</a></li>
-                            <li><a href="http://www.olasuchicago.org/about/index.html#what">What We Do</a></li>
-                            <li><a href="http://www.olasuchicago.org/about/index.html#board">Our Board</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="http://www.olasuchicago.org/membership/index.html">Members</a>
-                        <ul>
-                            <li><a href="http://www.olasuchicago.org/membership/index.html#get">Get involved</a></li>
-                            <li><a href="http://www.olasuchicago.org/membership/index.html#member">How to become a member</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="http://www.olasuchicago.org/events/index.html">Events</a>
-                        <ul>
-                            <li><a href="http://www.olasuchicago.org/events/index.html#upcoming">Upcoming events</a></li>
-                            <li><a href="http://www.olasuchicago.org/events/index.html#suggestions">Suggest an event</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="http://www.olasuchicago.org/cultural_show/index.html">Cultural Show</a>
-                        <ul>
-                            <li><a href="http://www.olasuchicago.org/cultural_show/index.html#committees">Committees</a></li>
-                            <li><a href="http://www.olasuchicago.org/cultural_show/index.html#volunteer">Volunteer</a></li>
-                            <li><a href="http://www.olasuchicago.org/cultural_show/index.html#gallery">Gallery</a></li>
-                            <li>
-                                <a href="http://www.olasuchicago.org/cultural_show/previous/index.html">Previous Years &hellip;</a>
-                                <ul>
-                                    <li><a href="http://www.olasuchicago.org/cultural_show/previous/2017.html">2017</a></li>
-                                    <li><a href="http://www.olasuchicago.org/cultural_show/previous/2016.html">2016</a></li>
-                                    <li><a href="http://www.olasuchicago.org/cultural_show/previous/2015.html">2015</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="http://www.olasuchicago.org/gallery/index.html">Gallery</a>
-                        <ul>
-                            <li><a href="http://www.olasuchicago.org/gallery/index.html#photos">Photographs</a></li>
-                            <li><a href="http://www.olasuchicago.org/gallery/index.html#videos">Videos</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="http://www.olasuchicago.org/partnerships/index.html">Partnerships</a>
-                        <ul>
-                            <li><a href="http://www.olasuchicago.org/partnerships/index.html#accenture">Accenture</a></li>
-                            <li><a href="http://www.olasuchicago.org/partnerships/index.html#google">Google</a></li>
-                            <li><a href="http://www.olasuchicago.org/partnerships/index.html#mural">Mural Magazine</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <!-- script to load nav bar -->
+                <script>
+                    function setNav() {
+                        $.get("http://www.olasuchicago.org/nav_bar.html", function(data){
+                            $("#nav").html(data);
+                        });
+                        console.log("in sidebar inside function");
+                    }
+                    setNav();
+                </script>
             </nav>
         </div>
         
@@ -169,9 +119,7 @@
                             </footer>
                         </section>
                         <hr />
-                        <div id="side_bar">
-                            <!-- code in the script above -->
-                        </div>  
+                        <!-- code for the rest of the sidebar is the script at top of file --> 
                     </div>
                 </div>
                 <hr />
@@ -388,7 +336,6 @@
 
     <!-- Scripts -->
     <script src="assets/js/main_functions.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.dropotron.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/jquery.onvisible.min.js"></script>
