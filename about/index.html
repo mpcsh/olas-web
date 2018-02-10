@@ -17,7 +17,6 @@
     <!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
 
     <!-- Loading jquery script for nav bar, doesn't work if script at end of file --> 
-    <script src="../assets/js/jquery.min.js"></script>
     <script>
         /* nav bar and side bar */
         window.onload = function() {
@@ -45,12 +44,18 @@
             <nav id="nav">
                 <!-- script to load nav bar -->
                 <script>
-                    function setNav() {
-                        $.get("http://www.olasuchicago.org/nav_bar.html", function(data){
-                            $("#nav").html(data);
-                        });
+                    var nav_page = new XMLHttpRequest();
+                    nav_page.open("GET", "http://www.olasuchicago.org/nav_bar.html", true);
+                    nav_page.onreadystatechange = function() {
+                        if (nav_page.readyState === 4) {  // Makes sure the document is ready to parse.
+                            if (nav_page.status === 200) {  // Makes sure it's found the file.
+                                allText = nav_page.responseText; 
+                                var nav = document.getElementById('nav');
+                                nav.innerHTML = nav_page.responseText;
+                            }
+                        }
                     }
-                    setNav();
+                    nav_page.send(null);
                 </script>
             </nav>
 
@@ -234,7 +239,8 @@
 		</div>
 
 		<!-- Scripts -->
-			<script src="../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../assets/js/jquery.min.js"></script>
+            <script src="../assets/js/jquery.dropotron.min.js"></script>
 			<script src="../assets/js/jquery.scrolly.min.js"></script>
 			<script src="../assets/js/jquery.onvisible.min.js"></script>
 			<script src="../assets/js/skel.min.js"></script>
