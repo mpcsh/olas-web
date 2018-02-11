@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+/* adds indents to paragraphs */
+#content p {
+    text-indent: 20px;
+}
