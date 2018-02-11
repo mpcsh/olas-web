@@ -4,3 +4,19 @@
 #content p {
     text-indent: 20px;
 }
+
+img {
+    float: left;
+}
+
+.partner_list p {
+    margin-left: 115px;
+}
+
+.partner_list li {
+    margin: 10px 0;
+}
+
+#no_indent {
+    margin-left: -20px;
+}

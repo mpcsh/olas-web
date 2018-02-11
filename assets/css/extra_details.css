@@ -39,3 +39,12 @@
 .fit {
     margin-bottom: 20px;
 }
+
+#main_header {
+    text-align: center;
+}
+
+#show {
+    font-size: 1.2em;
+    margin: auto;
+}
