@@ -53,3 +53,10 @@ iframe {
     margin-left: 10%;
 }
 
+.premios {
+    border-style: none;
+}
+
+#premios {
+    margin-top: -50px;
+}
