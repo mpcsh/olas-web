@@ -291,3 +291,9 @@ img.fb-comment-account {
 .fb-albums-more {
     display: none;
 }
+
+#alb div {
+    text-align: center;
+    position: absolute;
+    margin-left: 200px;
+}
