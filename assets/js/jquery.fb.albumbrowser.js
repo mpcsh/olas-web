@@ -201,7 +201,7 @@
                                             alt: "Back",
                                             height: 32,
                                             width: 32,
-                                            src: 'img/back.png',
+                                            src: 'http://www.olasuchicago.org/img/gallery/back.png',
                                             class: "fb-albums-list"
                                         }));
 
@@ -607,8 +607,8 @@
                     if (settings.showImageText || settings.likeButton || settings.shareButton) {
                         lightboxContent.append($("<div>", { class: "fb-preview-text" }));
                     }
-                    overlay.append($("<img>", { class: "fb-preview-img-prev", src: "img/previous.png", alt: "prev", width: "30px" }));
-                    overlay.append($("<img>", { class: "fb-preview-img-next", src: "img/next.png", alt: "next", width: "30px" }));
+                    overlay.append($("<img>", { class: "fb-preview-img-prev", src: "http://www.olasuchicago.org/img/gallery/previous.png", alt: "prev", width: "30px" }));
+                    overlay.append($("<img>", { class: "fb-preview-img-next", src: "http://www.olasuchicago.org/img/gallery/next.png", alt: "next", width: "30px" }));
 
                     $("body").append(overlay);
                     overlay = $(".fb-preview-overlay");

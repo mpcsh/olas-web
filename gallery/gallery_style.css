@@ -5,15 +5,16 @@
     text-indent: 20px;
 }
 
+/* gallery styles */
 .fb-loading, .fb-loading-image, li.fb-album, li.fb-photo {
-    background-image: url('img/loader.gif');
+    background-image: url('../img/gallery/loader.gif');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .fb-preview-overlay {
-    background-image: url('img/loader.gif');
+    background-image: url('../img/gallery/loader.gif');
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -23,7 +24,7 @@
 }
 
 img.fb-comment-account {
-    background-image: url('img/loader.gif');
+    background-image: url('../img/gallery/loader.gif');
     background-position: center center;
     background-repeat: no-repeat;
 }
