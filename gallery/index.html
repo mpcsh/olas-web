@@ -14,6 +14,9 @@
     <!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="stylesheet" href="gallery_style.css" />
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/jquery.fb.albumbrowser.js"></script>
+    <link rel="stylesheet" type="text/css" href="//rawgit.com/dejanstojanovic/Facebook-Album-Browser/master/src/jquery.fb.albumbrowser.css" />
     <!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
 
     <!-- Loading jquery script for nav bar, doesn't work if script at end of file --> 
@@ -112,16 +115,49 @@
                     <div class="8u 12u(mobile)" id="content">
                         <article id="main">
                             <header>
-                                <h2 id="photos">Event Photographs</h2>
+                                <h2 id="photos">Photographs</h2>
                             </header>
-                            <section>
-                                <p>Photos will be uploaded soon!</p>
-                            </section>
-                            <header>
-                                <h2 id="photos">Event Videos</h2>
-                            </header>
-                            <section>
-                                <p>Videos will be uploaded soon!</p>
+                            <section id="alb">
+                                <div class="fb-album-container" style="text-align: center"></div>
+                                <script type="text/javascript">
+                                    $(document).ready(function () {
+                                      $(".fb-album-container").FacebookAlbumBrowser({
+                                            account: "olas.uchicago",
+                                            accessToken: "775908159169504|cYEIsh0rs25OQQC8Ex2hXyCOut4",
+                                            showComments: true,
+                                            commentsLimit:3,
+                                            showAccountInfo: false,
+                                            showImageCount: false,
+                                            showImageText: true,
+                                            shareButton: true,
+                                            albumsPageSize: 0,
+                                            photosPageSize: 0,
+                                            skipAlbums: ["Profile Pictures", "Cover Photos", "Timeline Photos"],
+                                            lightbox: true,
+                                            photosCheckbox: false,
+                                            pluginImagesPath: "../src/",
+                                            likeButton: true,
+                                            shareButton: true,
+                                            //addThis:"ra-52638e915dd79612",
+                                            /*
+                                            photoChecked: function(photo){
+                                                console.log("PHOTO CHECKED: " + photo.id + " - " + photo.url + " - " + photo.thumb);
+                                                console.log("CHECKED PHOTOS COUNT: " + this.checkedPhotos.length);
+                                            },
+                                            photoUnchecked: function (photo) {
+                                                console.log("PHOTO UNCHECKED: " + photo.id + " - " + photo.url + " - " + photo.thumb);
+                                                console.log("CHECKED PHOTOS COUNT: " + this.checkedPhotos.length);
+                                            },
+                                            albumSelected: function (photo) {
+                                                console.log("ALBUM CLICK: " + photo.id + " - " + photo.url + " - " + photo.thumb);
+                                            },
+                                            photoSelected: function (photo) {
+                                                console.log("PHOTO CLICK: " + photo.id + " - " + photo.url + " - " + photo.thumb);
+                                            }*/
+                                        });
+
+                                    });
+                                </script>
                             </section>
                         </article>
                     </div>
@@ -173,7 +209,6 @@
     </div>
 
     <!-- Scripts -->
-    <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/jquery.dropotron.min.js"></script>
     <script src="../assets/js/jquery.scrolly.min.js"></script>
     <script src="../assets/js/jquery.onvisible.min.js"></script>
