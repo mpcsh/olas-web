@@ -8,11 +8,14 @@
 <head>
     <!--–– Last edit: 1/25/18 6:57PM ––-->
     <title>OLAS - Show</title>
-    <link rel="shortcut icon" href="olas_icon.ico" />
+    <link rel="shortcut icon" href="../olas_icon.ico" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="../assets/css/main.css" />
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="../assets/js/jquery.fb.albumbrowser.js"></script>
+    <link rel="stylesheet" type="text/css" href="//rawgit.com/dejanstojanovic/Facebook-Album-Browser/master/src/jquery.fb.albumbrowser.css" />
     <link rel="stylesheet" href="show_style.css" />
     <!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
     
@@ -88,7 +91,6 @@
                         <a href="http://www.olasuchicago.org/gallery/index.html">Gallery</a>
                         <ul>
                             <li><a href="http://www.olasuchicago.org/gallery/index.html#photos">Photographs</a></li>
-                            <li><a href="http://www.olasuchicago.org/gallery/index.html#videos">Videos</a></li>
                         </ul>
                     </li>
                     <li>
@@ -111,6 +113,7 @@
                 <div class="row 200%">
                     <div class="8u 12u(mobile)" id="content">
                         <article id="main">
+                            <a id="tickets" href="https://goo.gl/fwhwrw" class="button">Buy tickets</a>
                             <a href="../img/show/banner.png" class="image featured"><img src="../img/show/banner.png" alt="" /></a>
                             <header>
                                 <h2>What is the OLAS Cultural Show?</h2>
@@ -126,6 +129,12 @@
                                         <div class="vids">
                                             <iframe width="480" height="270" src="https://www.youtube.com/embed/Tiq8nPtSAPo" frameborder="0"   allow="autoplay; encrypted-media" allowfullscreen></iframe>
                                             <h3>Promo #1</h3>
+                                        </div>
+                                    </li>
+                                    <li id="promo2" class="show premios">
+                                        <p id="show">It's like the grammys, pero mejor!</p>
+                                        <div class="vids">
+                                            <iframe width="480" height="270" src="https://www.youtube.com/embed/iPZPx-OzhZ8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                                         </div>
                                     </li>
                                 </ul>
@@ -145,7 +154,7 @@
                                         <p>Decorations</p>
                                     </li>
                                     <li>
-                                        <p>Food:</p>
+                                        <p>Food</p>
                                     </li>
                                     <li>
                                         <p>Volunteer</p>
@@ -165,26 +174,48 @@
                                 <header>
                                     <h3 id="gallery">Look at some pictures from last year's show!</h3>
                                 </header>
-                                <ul id="photos">
-                                    <li>
-                                        <img src="img/26.jpg" width="90%" />
-                                    </li>
-                                    <li>
-                                        <img src="img/37.jpg" width="90%" />
-                                    </li>
-                                    <li>
-                                        <img src="img2/28.jpg" width="90%" />
-                                    </li>
-                                    <li>
-                                        <img src="img2/4.jpg" width="90%" />
-                                    </li>
-                                    <li>
-                                        <img src="img2/5.jpg" width="90%" />
-                                    </li>
-                                    <li>
-                                        <img src="img/18.jpg" width="90%" />
-                                    </li>
-                                </ul>
+                                <section>
+                                <div class="fb-album-container" style="text-align: center"></div>
+                                <script type="text/javascript">
+                                    $(document).ready(function () {
+                                      $(".fb-album-container").FacebookAlbumBrowser({
+                                            account: "olas.uchicago",
+                                            accessToken: "775908159169504|cYEIsh0rs25OQQC8Ex2hXyCOut4",
+                                            showComments: false,
+                                            commentsLimit:3,
+                                            showAccountInfo: false,
+                                            showImageCount: false,
+                                            showImageText: false,
+                                            shareButton: false,
+                                            albumsPageSize: 0,
+                                            photosPageSize: 0,
+                                            skipAlbums: ["Profile Pictures", "Cover Photos", "Timeline Photos", "China & Latin America Forum", "2016 Annual Formal: Dinner & Dance", "Ser Latino: 2016 Cultural Show", "Fall 2014", "Mobile Uploads", "OLAS O-Week 2013", "Conoce UChicago", "Baila Con OLAS", "Latinos Sin Barreras", "Latin American Policy Forum"],
+                                            lightbox: true,
+                                            photosCheckbox: false,
+                                            pluginImagesPath: "../src/",
+                                            likeButton: false,
+                                            shareButton: false,
+                                            //addThis:"ra-52638e915dd79612",
+                                            /*
+                                            photoChecked: function(photo){
+                                                console.log("PHOTO CHECKED: " + photo.id + " - " + photo.url + " - " + photo.thumb);
+                                                console.log("CHECKED PHOTOS COUNT: " + this.checkedPhotos.length);
+                                            },
+                                            photoUnchecked: function (photo) {
+                                                console.log("PHOTO UNCHECKED: " + photo.id + " - " + photo.url + " - " + photo.thumb);
+                                                console.log("CHECKED PHOTOS COUNT: " + this.checkedPhotos.length);
+                                            },
+                                            albumSelected: function (photo) {
+                                                console.log("ALBUM CLICK: " + photo.id + " - " + photo.url + " - " + photo.thumb);
+                                            },
+                                            photoSelected: function (photo) {
+                                                console.log("PHOTO CLICK: " + photo.id + " - " + photo.url + " - " + photo.thumb);
+                                            }*/
+                                        });
+
+                                    });
+                                </script>
+                            </section>
                             </section>
                             <section>
                                 <header>
@@ -246,7 +277,6 @@
     </div>
     
     <!-- Scripts -->
-    <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/jquery.dropotron.min.js"></script>
     <script src="../assets/js/jquery.scrolly.min.js"></script>
     <script src="../assets/js/jquery.onvisible.min.js"></script>

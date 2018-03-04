@@ -5,32 +5,26 @@
     text-indent: 20px;
 }
 
-/* adding style for board list */
-.show {
-    float: clear;
-    border-style: solid;
-    border-top-color: darkgray;
-    border-top-width: 1px;
-    padding: 20px;
+/* gallery styles */
+.fb-loading, .fb-loading-image, li.fb-album, li.fb-photo {
+    background-image: url('../img/gallery/loader.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-/* adding a bottom border to the last board member */
-#coral {
-    border-bottom-color: darkgray;
-    border-bottom-width: 1px;
+.fb-preview-overlay {
+    background-image: url('../img/gallery/loader.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
-.vids {
-    position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
+.fb-preview-img {
+    padding: 0 10%;
 }
 
-iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+img.fb-comment-account {
+    background-image: url('../img/gallery/loader.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
 }

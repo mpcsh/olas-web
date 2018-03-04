@@ -8,15 +8,15 @@
 <head>
     <!--–– Last edit: 1/25/18 6:57PM ––-->
     <title>OLAS - Gallery</title>
-    <link rel="shortcut icon" href="olas_icon.ico" />
+    <link rel="shortcut icon" href="../olas_icon.ico" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
     <link rel="stylesheet" href="../assets/css/main.css" />
-    <link rel="stylesheet" href="gallery_style.css" />
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/jquery.fb.albumbrowser.js"></script>
+	<script type="text/javascript" src="../assets/js/jquery.fb.albumbrowser.js"></script>
     <link rel="stylesheet" type="text/css" href="//rawgit.com/dejanstojanovic/Facebook-Album-Browser/master/src/jquery.fb.albumbrowser.css" />
+    <link rel="stylesheet" href="gallery_style.css" />
     <!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
 
     <!-- Loading jquery script for nav bar, doesn't work if script at end of file --> 
@@ -91,7 +91,6 @@
                         <a href="http://www.olasuchicago.org/gallery/index.html">Gallery</a>
                         <ul>
                             <li><a href="http://www.olasuchicago.org/gallery/index.html#photos">Photographs</a></li>
-                            <li><a href="http://www.olasuchicago.org/gallery/index.html#videos">Videos</a></li>
                         </ul>
                     </li>
                     <li>
@@ -117,27 +116,27 @@
                             <header>
                                 <h2 id="photos">Photographs</h2>
                             </header>
-                            <section id="alb">
+                            <section id="gallery">
                                 <div class="fb-album-container" style="text-align: center"></div>
                                 <script type="text/javascript">
                                     $(document).ready(function () {
                                       $(".fb-album-container").FacebookAlbumBrowser({
                                             account: "olas.uchicago",
                                             accessToken: "775908159169504|cYEIsh0rs25OQQC8Ex2hXyCOut4",
-                                            showComments: true,
+                                            showComments: false,
                                             commentsLimit:3,
                                             showAccountInfo: false,
                                             showImageCount: false,
-                                            showImageText: true,
-                                            shareButton: true,
+                                            showImageText: false,
+                                            shareButton: false,
                                             albumsPageSize: 0,
                                             photosPageSize: 0,
                                             skipAlbums: ["Profile Pictures", "Cover Photos", "Timeline Photos"],
                                             lightbox: true,
                                             photosCheckbox: false,
                                             pluginImagesPath: "../src/",
-                                            likeButton: true,
-                                            shareButton: true,
+                                            likeButton: false,
+                                            shareButton: false,
                                             //addThis:"ra-52638e915dd79612",
                                             /*
                                             photoChecked: function(photo){

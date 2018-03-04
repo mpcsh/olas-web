@@ -7,14 +7,21 @@
 
 img {
     float: left;
+    padding-top: 5px;
 }
 
 .partner_list p {
     margin-left: 115px;
+    padding-bottom: 20px;
 }
 
 .partner_list li {
     margin: 10px 0;
+}
+
+.partner_list img {
+    padding-top: 7px;
+    padding-bottom: 10px;
 }
 
 #no_indent {
